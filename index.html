@@ -1,29 +1,269 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/estilo.css">
-    <title>Home</title>
-</head>
-<body>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>XEELL SKATESHOP</title>
+    <style>
+      /* Estilos gerais */
+      body {
+        font-family: Arial, sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        padding: 0;
+      }
+      
+      /* Estilos para o cabeçalho */
+      header {
+        background-color: black;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 60px;
+      }
+      
+      h1 {
+        font-size: 48px;
+        text-align: center;
+        margin: 0;
+      }
+      
+      p {
+        font-size: 24px;
+        margin: 0;
+      }
+      
+      /* Estilos para o logo */
+      .logo {
+        display: flex;
+        align-items: center;
+        width: 450px;
+      }
+      
+      .logo img {
+        width: 250px;
+        margin-right: 20px;
+      }
+      
+      /* Estilos para a barra de pesquisa */
+      form {
+        display: flex;
+        align-items: center;
+        width: 550px;
+        margin-top: 50px;
+      }
+      input[type="text"] {
+        padding: 10px;
+        border-radius: 5px;
+        border: none;
+        margin-left: 20px;
+        width: 700px;
+        height: 20px;
+      }
+      
+      input[type="submit"] {
+        padding: 10px;
+        background-color: white;
+        color: black;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        height: 40px;
+      }
+      .menu {
+    margin-top: 50px;
+  }
+
+  .menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 100px;
+  }
+
+  .menu li {
+    margin-left: -50px;
+  }
+
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 150px;
+  }
+  img{
+    width: -10%;
+}
+.vitrine ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.vitrine li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  margin-bottom: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+}
+
+.vitrine li img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.vitrine li h2, .vitrine li p, .vitrine li button {
+  margin: 0;
+}
+
+.vitrine li h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.vitrine li p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.vitrine li button {
+  padding: 10px;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* Estilo do botão do menu */
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilo do contêiner do menu suspenso */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Estilo do conteúdo do menu suspenso */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Estilo das opções do menu suspenso */
+.dropdown-content a {
+  color: rgb(135, 63, 135)
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilo da opção do menu suspenso quando o mouse passa sobre ela */
+.dropdown-content a:hover {
+  background-color: rgb(79, 74, 74)
+}
+
+/* Estilo do menu suspenso quando o mouse passa sobre o botão do menu */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilo do menu suspenso quando o mouse sai dele */
+.dropdown:hover .dropbtn {
+  background-color: black
+}
+    </style>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
     <header>
-        <div class="botoes">
-        <a id="item-select" href="index.html">Home</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="redes.html">Redes Sociais</a>
+      <div class="logo">
+        <img src="assets/css/img/logo xeell.png" alt="Logo do site">
+      </div>
+      
+      <form action="#">
+        <input type="text" placeholder="Pesquisar...">
+        <input type="submit" value="Buscar">
+      </form>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="produtos.html">Produtos</a></li>
+          <li><a href="contatos.html">Contato</a></li>
+        </ul>
+        <div class="dropdown">
+          <button class="dropbtn">menu</button>
+          <div class="dropdown-content">
+            <a href="tenis.html">tenis</a>
+            <a href="bags.html">bags</a>
+            <a href="camisetas.html">camisetas</a>
+          </div>
         </div>
-    </header>
-    <fieldset>
-        <p>Visualiza os arquivos que foram alterados</p>
-        <h5>git status</h5>
-        <p>Prepara um arquivo para ser versionado</p>
-        <h5>git add nome_de_um_arquivo</h5>
-        <p>Gera a versão das modificações</p>
-        <h5>git commit -m "Uma mensagem do que foi feito nos arquivos nesta versão"</h5>
-        <p>Enviar para o Github</p>
-        <h5>git push origin main</h5>
-    </fieldset>
-</body>
+      </nav>
+    </header>   
+    <div class="vitrine">
+        <ul>
+          <li>
+            <img src="assets/css/img/tesla.webp" alt="Imagem do produto">
+            <h2>Tênis Tesla Coil Refletivo</h2>
+            <p>R$ 450.99</p>
+            <button>Comprar</button>
+          </li>
+          <li>
+            <img src="assets/css/img/tenis ous.webp" alt="Imagem do produto">
+            <h2>Tênis ÖUS Arquitetônico Essencial - Preto/ Creme</h2>
+            <p>R$ 348,95</p>
+            <button>Comprar</button>
+          </li>
+          <li>
+            <img src="assets/css/img/tenis dc.webp" alt="Imagem do produto">
+            <h2>TÊNIS DC ANVIL LA PRETO/GUM</h2>
+            <p> R$ 287,50</p>
+            <button>Comprar</button>
+          </li>
+        </ul>
+      </div>
+      <div class="vitrine">
+        <ul>
+          <li>
+            <img src="assets/css/img/camisa high.webp" alt="Imagem do produto">
+            <h2>Camiseta H.I.G.H X D.I.S.N.E.Y M.I.C.K.E.Y</h2>
+            <p>R$ 158,00</p>
+            <button>Comprar</button>
+          </li>
+          <li>
+            <img src="assets/css/img/camisa vans esanta cruz.webp" alt="Imagem do produto">
+            <h2>Camiseta vans/santa Cruz frente E Costa NoBrand</h2>
+            <p>R$ 348,95</p>
+            <button>Comprar</button>
+          </li>
+          <li>
+            <img src="assets/css/img/trasher.webp" alt="Imagem do produto">
+            <h2>Camiseta Thrasher NoBrandNoCotton</h2>
+            <p> R$ 123,50</p>
+            <button>Comprar</button>
+          </li>
+        </ul>
+      </div>
+      </style>
+      <footer>
+        <img src="assets/css/img/rodape .png" alt="">
+      </footer>
+  </body>
 </html>
