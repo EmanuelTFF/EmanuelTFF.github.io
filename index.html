@@ -5,86 +5,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Emanuel</title>
+
+    <!-- CSS EXTERNO -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+<body>
 
-    <header style="background-color: #333; color: white; padding: 20px;">
-        <h1>Emanuel</h1>
-        <p>Desenvolvedor Web</p>
+    <!-- HEADER -->
+    <header>
+        <div class="logo-titulo">
+            <h1>Emanuel</h1>
+            <p>Desenvolvedor Web</p>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Serviços</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <section style="padding: 20px; margin: 10px; background-color: white; border-radius: 8px;">
-        <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 5px;">Sobre Mim</h2>
+    <!-- CONTEÚDO -->
+    <main>
 
-        <img src="eu.png" alt="Minha foto"
-            style="width: 200px; height: auto; display: block; margin: 10px 0; border-radius: 0;">
+        <section>
+            <h2>Sobre Mim</h2>
+            <img src="eu.png" alt="Minha foto" class="foto">
 
-        <p>
-            Olá! Meu nome é Emanuel, sou desenvolvedor web e apaixonado por criar sites modernos,
-            responsivos e com design profissional.
-        </p>
-        <p>
-            Estou sempre buscando evoluir minhas habilidades e desenvolver projetos cada vez mais completos.
-        </p>
-    </section>
+            <p>
+                Olá! Meu nome é Emanuel, sou desenvolvedor web e apaixonado por criar sites modernos,
+                responsivos e com design profissional.
+            </p>
 
-    <section style="padding: 20px; margin: 10px; background-color: white; border-radius: 8px;">
-        <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 5px;">Minhas Skills</h2>
+            <p>
+                Estou sempre buscando evoluir minhas habilidades e desenvolver projetos cada vez mais completos.
+            </p>
+        </section>
 
-        <ul style="padding-left: 20px;">
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>JavaScript</li>
-            <li>Next.js</li>
-            <li>React</li>
-            <li>React Native</li>
-            <li>Laravel</li>
-            <li>PHP</li>
-            <li>Git/Github</li>
-            <li>Banco de Dados</li>
-            <li>Criação de APIs</li>
-            <li>Integração com Supabase</li>
-            <li>Responsividade</li>
-            <li>Design moderno</li>
-            <li>Animações com CSS e JavaScript</li>
-            <li>Hospedagem de sites</li>
-        </ul>
-    </section>
+        <section>
+            <h2>Minhas Skills</h2>
 
-    <section style="padding: 20px; margin: 10px; background-color: white; border-radius: 8px;">
-        <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 5px;">Projetos</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Next.js</li>
+                <li>React</li>
+                <li>React Native</li>
+                <li>Laravel</li>
+                <li>PHP</li>
+                <li>Git/Github</li>
+                <li>Banco de Dados</li>
+                <li>Criação de APIs</li>
+                <li>Integração com Supabase</li>
+                <li>Responsividade</li>
+                <li>Design moderno</li>
+                <li>Animações com CSS e JavaScript</li>
+                <li>Hospedagem de sites</li>
+            </ul>
+        </section>
 
-        <h3>Sonnus</h3>
-        <p>Site intuitivo sobre sono desenvolvido com React e JavaScript.</p>
+        <section>
+            <h2>Projetos</h2>
 
-        <h3>Dashboard de Moedas</h3>
-        <p>Projeto frontend que mostra valores em tempo real com JavaScript puro.</p>
+            <h3>Sonnus</h3>
+            <p>Site intuitivo sobre sono desenvolvido com React e JavaScript.</p>
 
-        <h3>Sistema de Tarefas</h3>
-        <p>Aplicação com CRUD utilizando Supabase.</p>
-    </section>
+            <h3>Dashboard de Moedas</h3>
+            <p>Projeto frontend que mostra valores em tempo real com JavaScript puro.</p>
 
-    <section style="padding: 20px; margin: 10px; background-color: white; border-radius: 8px;">
-        <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 5px;">Meu Portfólio</h2>
+            <h3>Sistema de Tarefas</h3>
+            <p>Aplicação com CRUD utilizando Supabase.</p>
+        </section>
 
-        <p>
-            Eu já possuo um portfólio online com projetos mais completos e design avançado.
-        </p>
-        <p>
-            Acesse: https://tonis.netlify.app
-        </p>
-    </section>
+        <section>
+            <h2>Meu Portfólio</h2>
 
-    <section style="padding: 20px; margin: 10px; background-color: white; border-radius: 8px;">
-        <h2 style="border-bottom: 2px solid #ddd; padding-bottom: 5px;">Serviços</h2>
+            <p>
+                Eu já possuo um portfólio online com projetos mais completos e design avançado.
+            </p>
 
-        <ul style="padding-left: 20px;">
-            <li>Criação de sites profissionais</li>
-            <li>Desenvolvimento de aplicações web</li>
-            <li>Hospedagem e domínio</li>
-        </ul>
-    </section>
+            <p>
+                Acesse: https://tonis.netlify.app
+            </p>
+        </section>
+
+        <section>
+            <h2>Serviços</h2>
+
+            <ul>
+                <li>Criação de sites profissionais</li>
+                <li>Desenvolvimento de aplicações web</li>
+                <li>Hospedagem e domínio</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 - Emanuel | Desenvolvedor Web</p>
+    </footer>
 
 </body>
 
